@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study & Screen Timer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <header>
+            <h1>📚 Study & Screen Timer</h1>
+            <p>Focus better. Take breaks. Study smarter.</p>
+        </header>
+
+        <div class="dashboard">
+
+            <!-- Study Timer -->
+            <div class="card">
+                <h2>📖 Study Timer</h2>
+
+                <div id="studyTime">25:00</div>
+
+                <div class="buttons">
+                    <button onclick="startStudy()">Start</button>
+                    <button onclick="pauseStudy()">Pause</button>
+                    <button onclick="resetStudy()">Reset</button>
+                </div>
+            </div>
+
+            <!-- Screen Timer -->
+            <div class="card">
+                <h2>💻 Screen Time</h2>
+
+                <div id="screenTime">00:00:00</div>
+
+                <div class="buttons">
+                    <button onclick="startScreen()">Start</button>
+                    <button onclick="pauseScreen()">Pause</button>
+                    <button onclick="resetScreen()">Reset</button>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Study Session -->
+        <div class="card session">
+            <h2>🎯 Study Session</h2>
+
+            <label>Study Goal (minutes)</label>
+
+            <input type="number" id="goal" placeholder="Example: 120">
+
+            <button class="goalBtn" onclick="setGoal()">Set Goal</button>
+
+            <p id="goalMessage">No goal set</p>
+        </div>
+
+        <!-- Tips -->
+        <div class="tips">
+            <h2>💡 Study Tips</h2>
+            <ul>
+                <li>Keep your phone away while studying.</li>
+                <li>Take a short break after every study session.</li>
+                <li>Maintain good posture and proper lighting.</li>
+                <li>Stay hydrated.</li>
+            </ul>
+        </div>
+
+        <footer>
+            <p>Made with ❤️ for students</p>
+        </footer>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
